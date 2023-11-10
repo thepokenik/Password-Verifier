@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #b91372;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  background-color: #2e294e;
+  padding: 70px 30px 70px 30px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 1px 1px #e8c1c5;
+}
+
+input {
+  border-radius: 15px;
+  padding: 10px;
+  border: none;
+  background-color: #d499b9;
+  outline: none;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+
+.forca {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.button {
+  display: grid;
+  place-content: center;
+  margin: 5px;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+}
+
+#buttonIcon {
+  filter: invert(1);
+}
+
+span {
+  display: grid;
+  place-items: center;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.textbox {
+  display: grid;
+  place-items: center;
+  color: #fff;
+  margin-top: 15px;
+}
+
+progress {
+  border-radius: 15px;
+  width: 80%;
+  height: 28px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+progress::-webkit-progress-bar {
+  background-color: #c6c6c6;
+  border-radius: 15px;
+}
+
+progress::-webkit-progress-value {
+  border-radius: 15px;
+}

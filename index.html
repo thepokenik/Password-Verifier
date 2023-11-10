@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div>
+            <span>
+                Verificador de Senhas
+            </span>
+            <span>
+                Pelo menos 8 caracteres de comprimento. <br>
+                Deve conter letras maiúsculas e minúsculas. <br>
+                Deve conter números. <br>
+                Pode conter caracteres especiais (por exemplo, !, @, #, $, etc.).
+            </span>
+        </div>
+        <section class="form">
+            <div class="forca">
+                <input placeholder="Senha:" type="password" id="password" autocomplete="off">
+                <button onclick="toggleVisibility()" class="eye">
+                    <img id="buttonIcon" src="assets/hide.png" alt="buttonpng" width=40 />
+                </button>
+            </div>
+            <div class="forca">
+                <progress max="100" value="0" id="meter"></progress>
+            </div>
+            <div class="textbox"></div>
+        </section>
+    </main>
+</body>
+<script src="app.js"></script>
+
+</html>
