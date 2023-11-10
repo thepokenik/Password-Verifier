@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #b91372;
+  background-color: #f6a4a4;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -30,10 +30,10 @@ input {
 
 ::placeholder {
   color: #fff;
-  opacity: 1; /* Firefox */
+  opacity: 1;
 }
 
-.forca {
+.password-input {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,18 +73,30 @@ span {
   margin-top: 15px;
 }
 
-progress {
+.progress-container {
+  width: 60%;
+  margin: 20px auto;
+  height: 20px;
   border-radius: 15px;
-  width: 80%;
-  height: 28px;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
-}
-
-progress::-webkit-progress-bar {
   background-color: #c6c6c6;
-  border-radius: 15px;
 }
 
-progress::-webkit-progress-value {
+.progress-bar {
+  width: 0;
+  height: 20px;
+  background-color: #4caf50;
   border-radius: 15px;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+
+@keyframes progressBarAnimation {
+    from {
+        width: 0;
+    }
+}
+
+#myBar {
+    animation: progressBarAnimation 0.5s ease-out;
 }
