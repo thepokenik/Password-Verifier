@@ -11,31 +11,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-    <title>Document</title>
+    <title>Password Verifier</title>
 </head>
 
 <body>
     <main>
         <div>
             <span>
-                Verificador de Senhas
+                Password Checker
             </span>
             <span>
-                Pelo menos 8 caracteres de comprimento. <br>
-                Deve conter letras maiúsculas e minúsculas. <br>
-                Deve conter números. <br>
-                Pode conter caracteres especiais (por exemplo, !, @, #, $, etc.).
+                At least 8 characters long. <br>
+                Must contain both uppercase and lowercase letters. <br>
+                Must contain numbers. <br>
+                May contain special characters (e.g., !, @, #, $, etc.).
             </span>
         </div>
         <section class="form">
-            <div class="forca">
+            <div class="password-input">
                 <input placeholder="Senha:" type="password" id="password" autocomplete="off">
-                <button onclick="toggleVisibility()" class="eye">
+                <button onclick="toggleVisibility()" class="eye-icon">
                     <img id="buttonIcon" src="assets/hide.png" alt="buttonpng" width=40 />
                 </button>
             </div>
-            <div class="forca">
-                <progress max="100" value="0" id="meter"></progress>
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
             </div>
             <div class="textbox"></div>
         </section>
